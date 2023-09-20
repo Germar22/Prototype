@@ -1,7 +1,7 @@
 const links = document.querySelectorAll(".navbar > nav > ul > li ");
 const cards = document.querySelectorAll(".card");
 // Initialize the map
-var map = L.map('map').setView([6.07305, 125.12212], 20); // Set initial coordinates and zoom level
+var map = L.map('map').setView([6.07305, 125.12212], 13); // Set initial coordinates and zoom level
 
 // Add OpenStreetMap tile layer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
