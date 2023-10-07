@@ -1,50 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>
-     <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-</head>
-<body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="charts.js" defer></script>
+  </head>
+  <body>
     <div class="container">
-        <aside>
-            <div class="navbar">
-                <div class="user-logo"><img src="web-logo.png" alt="logo"></div>
-                <nav>
-                    <ul>
-                        <li class="selectedLink" name="alerts">Alerts</li>
-                        <li name="location">Location</li>
-                        <li name="recentoutbreaks">Recent Outbreaks</li>
-                    </ul>
-                </nav>
-            </div>
-        </aside>
-        <main>
-            <div class="card active alerts">
-                <div class="title">Alerts</div>
-                <div class="content">asdasd</div>
-            </div>
-            <div class="card location">
-                <div class="title">Location</div>
-                <div class="content">
-                    <div id="map" style="width: 100%; height: 600px;"></div>
-                </div>
-            </div>
-            <div class="card recentoutbreaks">
-                <div class="title">Recent Outbreaks</div>
-                <div class="content">asdasd</div>
-            </div>
-        </main>
+      <aside>
+        <div class="navbar">
+          <div class="user-logo"><img src="web-logo.png" alt="logo" /></div>
+          <nav>
+            <ul>
+              <li class="selectedLink" name="alerts">Alerts</li>
+              <li name="location">Location</li>
+              <li name="recentoutbreaks">Recent Outbreaks</li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      <main>
+        <div class="card active alerts">
+          <div class="title">Alerts</div>
+          <div class="content">asdasd</div>
+        </div>
+        <div class="card location">
+          <div class="title">Location</div>
+          <div class="content">
+            <div id="map" style="width: 100%; height: 600px"></div>
+          </div>
+        </div>
+        <div class="card recentoutbreaks">
+          <div class="title">Recent Outbreaks</div>
+          <div class="contentchart">
+            <canvas id="chart1"></canvas>
+          </div>
+          <div class="contentchart">
+            <canvas id="chart2"></canvas>
+          </div>
+          <div class="contentchart">
+            <canvas id="chart3"></canvas>
+          </div>
+          <div class="contentchart">
+            <canvas id="chart4"></canvas>
+          </div>
+          <div class="contentchart">
+            <canvas id="chart5"></canvas>
+          </div>
+          <div class="contentchart">
+            <canvas id="chart6"></canvas>
+          </div>
+          <div class="contentchart">
+            <canvas id="chart7"></canvas>
+          </div>
+          <div class="contentchart">
+            <canvas id="chart8"></canvas>
+          </div>
+          <div class="contentchart">
+            <canvas id="chart9"></canvas>
+          </div>
+          <div class="contentchart">
+            <canvas id="chart10"></canvas>
+          </div>
+          <div class="contentchart">
+            <canvas id="chart11"></canvas>
+          </div>
+          <div class="contentchart">
+            <canvas id="chart12"></canvas>
+          </div>
+          <div class="contentchart">
+            <canvas id="chart13"></canvas>
+          </div>
+          <div class="contentchart">
+            <canvas id="chart14"></canvas>
+          </div>
+          <div class="contentchart">
+            <canvas id="chart15"></canvas>
+          </div>
+          <div class="contentchart">
+            <canvas id="chart16"></canvas>
+          </div>
+          <div class="contentchart">
+            <canvas id="chart17"></canvas>
+          </div>
+          <div class="contentchart">
+            <canvas id="chart18"></canvas>
+          </div>
+          <div class="contentchart">
+            <canvas id="chart19"></canvas>
+          </div>
+          <div class="contentchart">
+            <canvas id="chart20"></canvas>
+          </div>
+          <div class="contentchart">
+            <canvas id="chart21"></canvas>
+          </div>
+          <div class="contentchart">
+            <canvas id="chart22"></canvas>
+          </div>
+          <div class="contentchart">
+            <canvas id="chart23"></canvas>
+          </div>
+          <div class="contentchart">
+            <canvas id="chart24"></canvas>
+          </div>
+          <div class="contentchart">
+            <canvas id="chart25"></canvas>
+          </div>
+          <div class="content">
+            <canvas id="chart26"></canvas>
+          </div>
+        </div>
+      </main>
     </div>
-</body>
+  </body>
 </html>
