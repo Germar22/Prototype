@@ -29,22 +29,30 @@
           <div class="user-logo"><img src="web-logo.png" alt="logo" /></div>
           <nav>
             <ul>
-              <li class="selectedLink" name="alerts">Alerts</li>
-              <li name="location">Location</li>
+              <li name="location">Dashboard</li>
               <li name="recentoutbreaks">Recent Outbreaks</li>
             </ul>
           </nav>
         </div>
       </aside>
       <main>
-        <div class="card active alerts">
-          <div class="title">Alerts</div>
-          <div class="content">asdasd</div>
-        </div>
-        <div class="card location">
-          <div class="title">Location</div>
+        <div class="card active location">
+          <div class="title">DashBoard</div>
           <div class="content">
-            <div id="map" style="width: 100%; height: 600px"></div>
+            <div id="map"></div>
+            <div class="alarms">
+              <div class="title-alarm">Alarms</div>
+
+              <div class="alarm-box">
+                <div class="coordinates">
+                  Latitude: 6.0694<br />Longitude: 125.1262
+                </div>
+                <div class="buttons">
+                  <button>Pin</button>
+                  <button>Delete</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="card recentoutbreaks">
