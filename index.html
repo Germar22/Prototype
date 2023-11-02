@@ -3,16 +3,14 @@
   <head>
     <link
       rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-      crossorigin=""
+      href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
     />
-    <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script
-      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-      crossorigin=""
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -51,15 +49,22 @@
                 <tr>
                   <td>6.0694, 125.1262</td>
                   <td>
-                    <button id="pin">Pin</button>
+                    <button id="pin1" onclick="changeLocation1()">Pin</button>
                     <button id="delete">Delete</button>
                   </td>
                 </tr>
                 <tr>
                   <td>6.07449, 125.1146</td>
                   <td>
-                    <button id="pin">Pin</button>
+                    <button id="pin2" onclick="changeLocation2()">Pin</button>
                     <button id="delete">Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6.0678, 125.1195</td>
+                  <td>
+                    <button id="pin" onclick="changeLocation3()">Pin</button>
+                    <button id="delete" onclick="removerout()">Delete</button>
                   </td>
                 </tr>
               </table>

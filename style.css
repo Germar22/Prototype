@@ -234,6 +234,8 @@ button:hover {
   background-color: #f9fafb;
 }
 
+#pin1:hover,
+#pin2:hover,
 #pin:hover {
   background-color: lightgreen;
 }
@@ -306,4 +308,8 @@ td {
   border: 1px solid;
   border-radius: 5px;
   padding: 10px;
+}
+
+.leaflet-top .leaflet-right {
+  visibility: hidden;
 }
