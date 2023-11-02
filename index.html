@@ -16,7 +16,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>AFAS System</title>
+    <link rel="icon" type="images/x-icon" href="web-logo.png" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -42,21 +43,34 @@
             <div id="map"></div>
             <div class="alarms">
               <div class="title-alarm">Alarms</div>
-
-              <div class="alarm-box">
-                <div class="coordinates">
-                  Latitude: 6.0694<br />Longitude: 125.1262
-                </div>
-                <div class="buttons">
-                  <button>Pin</button>
-                  <button>Delete</button>
-                </div>
-              </div>
+              <table>
+                <tr>
+                  <th>Coordinates</th>
+                  <th>Actions</th>
+                </tr>
+                <tr>
+                  <td>6.0694, 125.1262</td>
+                  <td>
+                    <button id="pin">Pin</button>
+                    <button id="delete">Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6.07449, 125.1146</td>
+                  <td>
+                    <button id="pin">Pin</button>
+                    <button id="delete">Delete</button>
+                  </td>
+                </tr>
+              </table>
             </div>
           </div>
         </div>
         <div class="card recentoutbreaks">
-          <div class="title">Recent Outbreaks</div>
+          <div class="title">
+            Recent Outbreaks
+            <button id="addreport">Add Report</button>
+          </div>
           <div class="contentchart">
             <canvas id="apopong"></canvas>
           </div>

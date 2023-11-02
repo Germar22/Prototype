@@ -19,9 +19,7 @@ var data1 = {
   ],
   datasets: [
     {
-      label: "Apopong",
       data: [3, 1, 4, 1, 3, 2, 4, 3, 2, 1, 2, 1],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -35,7 +33,21 @@ var options = {
 var chart1 = new Chart(ctx1, {
   type: "line", // Replace with the desired chart type
   data: data1,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Apopong",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 
 // Get a reference to the second canvas element
@@ -59,9 +71,7 @@ var data2 = {
   ],
   datasets: [
     {
-      label: "Baluan",
       data: [2, 3, 1, 1, 3, 2, 4, 2, 1, 2, 4, 2],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -71,7 +81,21 @@ var data2 = {
 var chart2 = new Chart(ctx2, {
   type: "line", // Replace with the desired chart type
   data: data2,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Baluan",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 
 var ctx3 = document.getElementById("bawing").getContext("2d");
@@ -94,9 +118,7 @@ var data1 = {
   ],
   datasets: [
     {
-      label: "Bawing",
       data: [3, 1, 4, 1, 3, 2, 4, 3, 2, 1, 2, 1],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -110,7 +132,21 @@ var options = {
 var chart3 = new Chart(ctx3, {
   type: "line", // Replace with the desired chart type
   data: data1,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Bawing",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 
 // Get a reference to the second canvas element
@@ -134,9 +170,7 @@ var data2 = {
   ],
   datasets: [
     {
-      label: "Buayan",
       data: [2, 3, 1, 1, 3, 2, 4, 2, 1, 2, 4, 2],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -146,7 +180,21 @@ var data2 = {
 var chart4 = new Chart(ctx4, {
   type: "line", // Replace with the desired chart type
   data: data2,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Buayan",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 // Get a reference to the first canvas element
 var ctx5 = document.getElementById("bula").getContext("2d");
@@ -169,9 +217,7 @@ var data1 = {
   ],
   datasets: [
     {
-      label: "Bula",
       data: [3, 1, 4, 1, 3, 2, 4, 3, 2, 1, 2, 1],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -185,7 +231,21 @@ var options = {
 var chart5 = new Chart(ctx5, {
   type: "line", // Replace with the desired chart type
   data: data1,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Bula",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 
 // Get a reference to the second canvas element
@@ -209,9 +269,7 @@ var data5 = {
   ],
   datasets: [
     {
-      label: "Calumpang",
       data: [2, 3, 1, 1, 3, 2, 4, 2, 1, 2, 4, 2],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -221,7 +279,21 @@ var data5 = {
 var chart6 = new Chart(ctx6, {
   type: "line", // Replace with the desired chart type
   data: data5,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Bula",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 // Get a reference to the first canvas element
 var ctx7 = document.getElementById("heights").getContext("2d");
@@ -244,9 +316,7 @@ var data1 = {
   ],
   datasets: [
     {
-      label: "City Heights",
       data: [3, 1, 4, 1, 3, 2, 4, 3, 2, 1, 2, 1],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -260,7 +330,21 @@ var options = {
 var chart7 = new Chart(ctx7, {
   type: "line", // Replace with the desired chart type
   data: data1,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "City Heights",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 
 // Get a reference to the second canvas element
@@ -284,9 +368,7 @@ var data2 = {
   ],
   datasets: [
     {
-      label: "Conel",
       data: [2, 3, 1, 1, 3, 2, 4, 2, 1, 2, 4, 2],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -296,7 +378,21 @@ var data2 = {
 var chart8 = new Chart(ctx8, {
   type: "line", // Replace with the desired chart type
   data: data2,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Conel",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 // Get a reference to the first canvas element
 var ctx9 = document.getElementById("east").getContext("2d");
@@ -319,9 +415,7 @@ var data1 = {
   ],
   datasets: [
     {
-      label: "Dadiangas East",
       data: [3, 1, 4, 1, 3, 2, 4, 3, 2, 1, 2, 1],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -335,7 +429,21 @@ var options = {
 var chart9 = new Chart(ctx9, {
   type: "line", // Replace with the desired chart type
   data: data1,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Dadiangas East",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 
 // Get a reference to the second canvas element
@@ -359,9 +467,7 @@ var data2 = {
   ],
   datasets: [
     {
-      label: "Dadiangas North",
       data: [2, 3, 1, 1, 3, 2, 4, 2, 1, 2, 4, 2],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -371,7 +477,21 @@ var data2 = {
 var chart10 = new Chart(ctx10, {
   type: "line", // Replace with the desired chart type
   data: data2,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Dadiangas North",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 // Get a reference to the first canvas element
 var ctx11 = document.getElementById("south").getContext("2d");
@@ -394,9 +514,7 @@ var data1 = {
   ],
   datasets: [
     {
-      label: "Dadiangas South",
       data: [3, 1, 4, 1, 3, 2, 4, 3, 2, 1, 2, 1],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -410,7 +528,21 @@ var options = {
 var chart11 = new Chart(ctx11, {
   type: "line", // Replace with the desired chart type
   data: data1,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Dadiangas South",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 
 // Get a reference to the second canvas element
@@ -434,9 +566,7 @@ var data2 = {
   ],
   datasets: [
     {
-      label: "Dadiangas West",
       data: [2, 3, 1, 1, 3, 2, 4, 2, 1, 2, 4, 2],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -446,7 +576,21 @@ var data2 = {
 var chart12 = new Chart(ctx12, {
   type: "line", // Replace with the desired chart type
   data: data2,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Dadiangas West",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 // Get a reference to the first canvas element
 var ctx13 = document.getElementById("fatima").getContext("2d");
@@ -469,9 +613,7 @@ var data1 = {
   ],
   datasets: [
     {
-      label: "Fatima",
       data: [3, 1, 4, 1, 3, 2, 4, 3, 2, 1, 2, 1],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -485,7 +627,21 @@ var options = {
 var chart13 = new Chart(ctx13, {
   type: "line", // Replace with the desired chart type
   data: data1,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Fatima",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 
 // Get a reference to the second canvas element
@@ -509,9 +665,7 @@ var data2 = {
   ],
   datasets: [
     {
-      label: "Labangal",
       data: [2, 3, 1, 1, 3, 2, 4, 2, 1, 2, 4, 2],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -521,7 +675,21 @@ var data2 = {
 var chart14 = new Chart(ctx14, {
   type: "line", // Replace with the desired chart type
   data: data2,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Katangawan",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 // Get a reference to the first canvas element
 var ctx15 = document.getElementById("labangal").getContext("2d");
@@ -544,9 +712,7 @@ var data1 = {
   ],
   datasets: [
     {
-      label: "Labangal",
       data: [3, 1, 4, 1, 3, 2, 4, 3, 2, 1, 2, 1],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -560,7 +726,21 @@ var options = {
 var chart15 = new Chart(ctx15, {
   type: "line", // Replace with the desired chart type
   data: data1,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Labangal",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 
 // Get a reference to the second canvas element
@@ -584,9 +764,7 @@ var data2 = {
   ],
   datasets: [
     {
-      label: "Lagao",
       data: [2, 3, 1, 1, 3, 2, 4, 2, 1, 2, 4, 2],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -596,7 +774,21 @@ var data2 = {
 var chart16 = new Chart(ctx16, {
   type: "line", // Replace with the desired chart type
   data: data2,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Lagao",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 // Get a reference to the first canvas element
 var ctx17 = document.getElementById("ligaya").getContext("2d");
@@ -619,9 +811,7 @@ var data1 = {
   ],
   datasets: [
     {
-      label: "Ligaya",
       data: [3, 1, 4, 1, 3, 2, 4, 3, 2, 1, 2, 1],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -635,7 +825,21 @@ var options = {
 var chart17 = new Chart(ctx17, {
   type: "line", // Replace with the desired chart type
   data: data1,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Ligaya",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 
 // Get a reference to the second canvas element
@@ -659,9 +863,7 @@ var data2 = {
   ],
   datasets: [
     {
-      label: "Mabuhay",
       data: [2, 3, 1, 1, 3, 2, 4, 2, 1, 2, 4, 2],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -671,7 +873,21 @@ var data2 = {
 var chart18 = new Chart(ctx18, {
   type: "line", // Replace with the desired chart type
   data: data2,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Mabuhay",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 // Get a reference to the first canvas element
 var ctx19 = document.getElementById("magsaysay").getContext("2d");
@@ -694,9 +910,7 @@ var data1 = {
   ],
   datasets: [
     {
-      label: "Magsaysay",
       data: [3, 1, 4, 1, 3, 2, 4, 3, 2, 1, 2, 1],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -710,7 +924,21 @@ var options = {
 var chart19 = new Chart(ctx19, {
   type: "line", // Replace with the desired chart type
   data: data1,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Magsaysay",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 
 // Get a reference to the second canvas element
@@ -734,9 +962,7 @@ var data2 = {
   ],
   datasets: [
     {
-      label: "Olympog",
       data: [2, 3, 1, 1, 3, 2, 4, 2, 1, 2, 4, 2],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -746,7 +972,21 @@ var data2 = {
 var chart20 = new Chart(ctx20, {
   type: "line", // Replace with the desired chart type
   data: data2,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Olympog",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 // Get a reference to the first canvas element
 var ctx21 = document.getElementById("san-isidro").getContext("2d");
@@ -769,9 +1009,7 @@ var data1 = {
   ],
   datasets: [
     {
-      label: "San Isidro",
       data: [3, 1, 4, 1, 3, 2, 4, 3, 2, 1, 2, 1],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -785,7 +1023,21 @@ var options = {
 var chart21 = new Chart(ctx21, {
   type: "line", // Replace with the desired chart type
   data: data1,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "San Isidro",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 
 // Get a reference to the second canvas element
@@ -809,9 +1061,7 @@ var data2 = {
   ],
   datasets: [
     {
-      label: "San Jose",
       data: [2, 3, 1, 1, 3, 2, 4, 2, 1, 2, 4, 2],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -821,7 +1071,21 @@ var data2 = {
 var chart22 = new Chart(ctx22, {
   type: "line", // Replace with the desired chart type
   data: data2,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "San Jose",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 // Get a reference to the first canvas element
 var ctx23 = document.getElementById("siguel").getContext("2d");
@@ -844,9 +1108,7 @@ var data1 = {
   ],
   datasets: [
     {
-      label: "Siguel",
       data: [3, 1, 4, 1, 3, 2, 4, 3, 2, 1, 2, 1],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -860,7 +1122,21 @@ var options = {
 var chart23 = new Chart(ctx23, {
   type: "line", // Replace with the desired chart type
   data: data1,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Siguel",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 
 // Get a reference to the second canvas element
@@ -884,9 +1160,7 @@ var data2 = {
   ],
   datasets: [
     {
-      label: "Sinawal",
       data: [2, 3, 1, 1, 3, 2, 4, 2, 1, 2, 4, 2],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -896,7 +1170,21 @@ var data2 = {
 var chart24 = new Chart(ctx24, {
   type: "line", // Replace with the desired chart type
   data: data2,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Sinawal",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 // Get a reference to the first canvas element
 var ctx25 = document.getElementById("tambler").getContext("2d");
@@ -919,9 +1207,7 @@ var data1 = {
   ],
   datasets: [
     {
-      label: "Tambler",
       data: [3, 1, 4, 1, 3, 2, 4, 3, 2, 1, 2, 1],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -935,7 +1221,21 @@ var options = {
 var chart25 = new Chart(ctx25, {
   type: "line", // Replace with the desired chart type
   data: data1,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Tambler",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 
 // Get a reference to the second canvas element
@@ -959,9 +1259,7 @@ var data2 = {
   ],
   datasets: [
     {
-      label: "Tinagacan",
       data: [2, 3, 1, 1, 3, 2, 4, 2, 1, 2, 4, 2],
-      backgroundColor: ["black"],
       lineTension: 0.8,
     },
   ],
@@ -971,5 +1269,19 @@ var data2 = {
 var chart26 = new Chart(ctx26, {
   type: "line", // Replace with the desired chart type
   data: data2,
-  options: options,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Tinagacan",
+        font: {
+          size: 20,
+          color: "Black",
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
